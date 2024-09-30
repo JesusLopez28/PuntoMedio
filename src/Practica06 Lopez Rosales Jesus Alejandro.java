@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.util.Arrays;
 
 class PuntoMedio extends JFrame {
     private JPanel panelDibujo;
@@ -135,9 +136,7 @@ class PuntoMedio extends JFrame {
             campo.setText("");
         }
 
-        for (int i = 0; i < valores.length; i++) {
-            valores[i] = 0;
-        }
+        Arrays.fill(valores, 0);
 
         panelDibujo.repaint();
     }
