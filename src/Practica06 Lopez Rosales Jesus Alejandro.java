@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-class FigurasGeometricas extends JFrame {
+class PuntoMedio extends JFrame {
     private JPanel panelDibujo;
     private JTextField[] campos;
     private String[] etiquetas = {"X1", "Y1", "X2", "Y2", "Radio", "Ancho", "Alto"};
@@ -10,8 +10,8 @@ class FigurasGeometricas extends JFrame {
     private Color[] colores = {Color.RED, Color.BLUE, Color.GREEN, Color.ORANGE, Color.MAGENTA};
     private int figuraSeleccionada = 0;
 
-    public FigurasGeometricas() {
-        setTitle("Figuras Geométricas");
+    public PuntoMedio() {
+        setTitle("Algoritmo de Punto Medio");
         setSize(1000, 700);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
@@ -272,6 +272,6 @@ class FigurasGeometricas extends JFrame {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        SwingUtilities.invokeLater(() -> new FigurasGeometricas().setVisible(true));
+        SwingUtilities.invokeLater(() -> new PuntoMedio().setVisible(true));
     }
 }
